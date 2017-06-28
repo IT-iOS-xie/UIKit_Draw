@@ -17,6 +17,7 @@
 
 @implementation thridDrawLayerDelegate
 
+#pragma mark ---- UIKIt
 - (void)drawLayer:(CALayer*)layer inContext:(CGContextRef)ctx {
     
     UIGraphicsPushContext(ctx);
@@ -30,8 +31,15 @@
     UIGraphicsPopContext();
 }
 
-
-
+#pragma mark --- coreGraphics
+//- (void)drawLayer:(CALayer*)layer inContext:(CGContextRef)ctx {
+//
+//    CGContextAddEllipseInRect(ctx, CGRectMake(0, 0, 100, 100));
+//    CGContextSetFillColorWithColor(ctx, [UIColor blueColor].CGColor);
+//    CGContextFillPath(ctx);
+//
+//
+//}
 @end
 
 @interface ThridDrawViewController ()

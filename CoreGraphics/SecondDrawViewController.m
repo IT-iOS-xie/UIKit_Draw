@@ -15,7 +15,7 @@
 
 
 @implementation myLayer
-
+#pragma mark --- UIKit
 -(void)drawInContext:(CGContextRef)ctx{
 
     UIGraphicsPushContext(ctx);
@@ -30,6 +30,15 @@
   
 
 }
+#pragma mark -----CoreGraphics
+//- (void)drawInContext:(CGContextRef)ctx{
+//    
+//    CGContextAddEllipseInRect(ctx, CGRectMake(0,0,100,100));
+//    
+//    CGContextSetFillColorWithColor(ctx, [UIColor blueColor].CGColor);
+//    
+//    CGContextFillPath(ctx);
+//}
 
 @end
 @interface SecondDrawViewController ()

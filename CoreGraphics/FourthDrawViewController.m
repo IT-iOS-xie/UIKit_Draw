@@ -18,6 +18,23 @@
     [super viewDidLoad];
     self.title = @"UIGraphicsBeginImageContextWithOptions";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+#pragma  mark ----- coreGraphics
+//    UIGraphicsBeginImageContextWithOptions(CGSizeMake(100,100), NO, 0);
+//    
+//    CGContextRef con = UIGraphicsGetCurrentContext();
+//    
+//    CGContextAddEllipseInRect(con, CGRectMake(0,0,100,100));
+//    
+//    CGContextSetFillColorWithColor(con, [UIColor blueColor].CGColor);
+//    
+//    CGContextFillPath(con);
+//    
+//    UIImage* img = UIGraphicsGetImageFromCurrentImageContext();
+    
+//    UIGraphicsEndImageContext();
+    
+#pragma mark ---- uikit
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(200, 200), NO, 0);
     
     UIBezierPath * path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 100, 100)];

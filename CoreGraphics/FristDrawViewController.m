@@ -15,7 +15,7 @@
 
 @implementation oneView
 
-
+#pragma mark ----- uikit
 -(void)drawRect:(CGRect)rect{
     ///绘制正方形路径
     //    UIBezierPath * path = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, 50, 50)];
@@ -35,6 +35,17 @@
     [path fill];
     
 }
+#pragma mark -----CoreGraphics
+//- (void)drawRect:(CGRect)rect{
+//    //当前上下文及画布为当前view
+//    CGContextRef con = UIGraphicsGetCurrentContext();
+//    
+//    CGContextAddEllipseInRect(con, CGRectMake(0,0,100,100));
+//    
+//    CGContextSetFillColorWithColor(con, [UIColor blueColor].CGColor);
+//    
+//    CGContextFillPath(con);
+//}
 @end
 @interface FristDrawViewController ()
 
